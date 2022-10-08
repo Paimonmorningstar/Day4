@@ -15,7 +15,8 @@ namespace Day4Middleware.Middlewares
             var request = context.Request;
             string requestInfo = "scheme:" + request.Scheme +
             "\tHost" + request.Host +
-            "\tPath" + request.QueryString +
+            "\tPath" + request.Path +
+            "\tQueryString" + request.QueryString+
             "\tRequestBody" + request.Body;
 
             Debug.Write(requestInfo);
